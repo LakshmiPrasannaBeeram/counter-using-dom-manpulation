@@ -1,0 +1,172 @@
+<!-- <!-- //dom  document 
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">dom manipulation</h1>
+    <p>this is dom manipulation</p>
+    <!------internal js---->
+    <!-- <script>
+        //1.getElementById
+        heading=document.getElementById('title')
+        heading.textContent="dom using js"
+        console.log(heading)
+    </script>
+</body>
+</html> --> -->
+<!-- ******************INCREMENT*****************************INCREMENT****************************************************************************** -->
+<!-- //count increment
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="count"> 0</p>
+    <button id="btn">increment</button>
+    <script>
+        count=document.getElementById("count")
+        button=document.getElementById("btn")
+        button.addEventListener("click",
+        function(){
+            count.textContent= Number(count.textContent)+1
+        }
+        )
+    </script>
+</body>
+</html> -->
+<!-- ************************DECREMENT**********************************DECREMENT************************************************************ -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="count"> 0</p>
+    <button id="btn">decrement</button>
+    <script>
+        count=document.getElementById("count")
+        button=document.getElementById("btn")
+        button.addEventListener("click",
+        function(){
+            count.textContent= Number(count.textContent)-1
+        }
+        )
+    </script>
+</body>
+</html> -->
+ <!-- //**********************INCREMENT AND DECREMENT USING ID************************************************************************** -->
+ <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="count"> 0</p>
+    <button id="btn">increment</button>
+    <button id="btn2">decrement</button>
+    <script>
+        count=document.getElementById("count")
+        button=document.getElementById("btn")
+        button2=document.getElementById("btn2")
+        button.addEventListener("click",
+          function(){
+            count.textContent= Number(count.textContent)+1
+          }
+        )
+        button2.addEventListener("click",
+          function(){
+            count.textContent= Number(count.textContent)-1
+          }
+        )
+    </script>
+</body>
+</html> -->
+<!-- //**********************INCREMENT AND DECREMENT USING CLASS************************************************************************* -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:lightcyan;
+        }
+        button{
+               background-color:violet;
+               border:0px;
+        }
+        button2{
+            background-color:violet;
+            border:0px;
+        }
+    </style>
+
+</head>
+<body>
+    <p id="count"> 0</p>
+    <button class="btn">increment</button>
+    <button2 class="btn">decrement</button>
+    <script>
+        count=document.getElementById("count")
+        button=document.getElementsByClassName("btn")[0]
+        button2=document.getElementsByClassName("btn")[1]
+        button.addEventListener("click",
+          function(){
+            count.textContent= Number(count.textContent)+1
+          }
+        )
+        button2.addEventListener("click",
+          function(){
+            count.textContent= Number(count.textContent)-1
+          }
+        )
+    </script>
+</body> 
+</html> 
+<!-- ***********getting elements by using-getElementsByTagName()  And change content ***************************************************** -->
+ <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>hello prasanna</p>
+    <p>hello gayathri</p>
+    <p>hello madhu</p>
+    <button id="update"> check </button>
+    <script>
+        prasu = document.getElementsByTagName("p") 
+        console.log(prasu)
+        for(let i=0;i<prasu.length;i++){  //to display content in paragragh tag
+            console.log(prasu[i].textContent)
+        }
+        btn=document.getElementById('update') //tochange change content in paragragh tag
+        btn.addEventListener("click",
+             function(){
+                  prasu[0].textContent="hi"
+                 prasu[1].textContent="bye"
+                 prasu[2].textContent="good"
+                for(let i=0;i<prasu.length;i++)
+                console.log(i,prasu[i].textContent)
+        }
+    )
+    </script>
+</body>
+</html>
+
+ -->
